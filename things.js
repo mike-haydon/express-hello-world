@@ -1,4 +1,4 @@
-import express from "express";
+var express = require("express");
 var router = express.Router();
 
 router.get("/", (req, res) => {
@@ -18,4 +18,4 @@ router.get("/:id([0-9]{5})", (req, res) => {
 });
 
 // export this router to use in index.js
-export default router;
+module.exports = router;
